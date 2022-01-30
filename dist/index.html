@@ -6,23 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
     <div id="content">
         <label for="email">Email</label>
-        <input id="email" type="email" name="email">
+        <input id="email" type="email" name="email" required>
+        <div id="emailMessage"></div>
         <label for="country">Country</label>
         <input id="country" type="text" name="country">
+        <div id="countryMessage"></div>
         <label for="zip"> Zip Code</label>
         <input id="zip" type="text" name="zip">
+        <div id="zipMessage"></div>
         <label for="password">Password</label>
-        <input id="password" type="text" name="password">
+        <input id="password" type="password" name="password">
+        <div id="passwordMessage"></div>
         <label for="confirmPass">Confirm Password</label>
-        <input id="confirmPass" type="text">
+        <input id="confirmPass" type="password">
+        <div id="confirmPassMessage"></div>
         <div></div>
         <input id="submitButton" type="button" value="Submit">
+        <div id="submittedMessage"></div>
 
     </div>
 </body>
